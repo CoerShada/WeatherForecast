@@ -1,5 +1,22 @@
 <resources>
-    <string name="app_name">Weather Forecast</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name" translatable="false">Weather Forecast</string>
+    <string name="feels_like">Feels like</string>
+    <string name="wind">Wind</string>
+    <string name="pressure">Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="visibility">Visibility</string>
+    <string name="loading_error">Weather data can\'t be loaded</string>
+    <string name="nord_s">N</string>
+    <string name="nord_ost_s">NO</string>
+    <string name="ost_s">O</string>
+    <string name="south_ost_s">SO</string>
+    <string name="south_s">S</string>
+    <string name="south_west_s">SW</string>
+    <string name="west_s">W</string>
+    <string name="nord_west_s">NW</string>
+    <string name="m">m</string>
+    <string name="m_s">m/s</string>
+
+
+
 </resources>

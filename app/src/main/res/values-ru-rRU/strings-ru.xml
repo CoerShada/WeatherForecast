@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feels_like">Ощущается как</string>
+    <string name="wind">Ветер</string>
+    <string name="pressure">Давление</string>
+    <string name="humidity">Влажность</string>
+    <string name="visibility">Видимость</string>
+    <string name="loading_error">Не удалось загрузить данные</string>
+    <string name="nord_s">С</string>
+    <string name="nord_ost_s">СВ</string>
+    <string name="ost_s">В</string>
+    <string name="south_ost_s">ЮВ</string>
+    <string name="south_s">Ю</string>
+    <string name="south_west_s">ЮЗ</string>
+    <string name="west_s">З</string>
+    <string name="nord_west_s">СЗ</string>
+    <string name="m">м</string>
+    <string name="m_s">м/с</string>
+</resources>

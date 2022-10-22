@@ -10,7 +10,7 @@ import java.io.IOException
 class OpenWeatherService {
     companion object {
         var API_KEY : String = "d77e2ae18df1bb62b5f29b0e87e9efa6";
-        var API_URL : String = "https://api.openweathermap.org"
+        var API_URL : String = "http://api.openweathermap.org"
     }
 
     val api : OpenWeatherAPI

@@ -1,8 +1,6 @@
 package ru.com.weatherforecast
 
-import android.graphics.Path
 import com.google.gson.annotations.SerializedName
-import java.util.Calendar
 
 data class Weather(
     val lon: Float,
@@ -13,14 +11,18 @@ data class Weather(
     val wind: Wind,
     @SerializedName("main")
     val mainInfo: MainInfo,
+    @SerializedName("dt")
     val receivedIn: Long,
-    val timezone: Long
+    val timezone: Long,
+    @SerializedName("name")
+    val cityName: String,
     )
 
 data class WeatherItem(
     val id: Int,
     val main: String,
-    val description: String
+    val description: String,
+    val icon: String
 )
 
 data class MainInfo(
@@ -37,9 +39,29 @@ data class Wind(
     @SerializedName("deg")
     val direction: Int,
     val gust: Float
-)
 
 
+){
+    fun getDirectionShortStringId(): Int{
+
+
+        return when (direction){
+            in 23..67-> R.string.nord_ost_s
+            in 68..112-> R.string.ost_s
+            in 113..157-> R.string.south_ost_s
+            in 158..202-> R.string.south_s
+            in 203..247-> R.string.south_west_s
+            in 248..292-> R.string.west_s
+            in 293..338-> R.string.nord_west_s
+            else-> R.string.nord_s
+        }
+
+
+
+
+
+    }
+}
 
 
 enum class CardinalPoints(val index: Byte, val stringRepresentation: String){
